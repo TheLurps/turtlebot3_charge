@@ -1,0 +1,13 @@
+scan_filter_chain:
+- name: interpolation
+  type: InterpolationFilter
+- name: intensity
+  type: LaserScanIntensityFilter
+  params:
+    lower_threshold: 500
+    upper_threshold: 10000
+    disp_histogram: 1
+- name: range
+  type: LaserScanRangeFilter
+  params:
+    use_message_range_limits: true

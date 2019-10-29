@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="turtlebot3_charge" type="display_sensordata.py" name="display_sensordata"></node>
+</launch>

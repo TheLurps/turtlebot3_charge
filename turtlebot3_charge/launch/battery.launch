@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="turtlebot3_charge" type="battery_status.py" name="record_battery_status"></node>
+</launch>

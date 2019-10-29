@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="turtlebot3_charge" type="goto_charging_station.py" name="goto_charging_station"></node>
+</launch>

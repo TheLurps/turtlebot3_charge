@@ -1,0 +1,12 @@
+[Unit]
+Description = Turtlebot Services (nav)
+Wants       = network-online.target
+
+[Service]
+ExecStart   = /usr/local/bin/start_turtlebot_nav.sh
+Restart     = always
+RestartSec  = 3
+
+[Install]
+WantedBy    = multi-user.target
+

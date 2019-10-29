@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter">
+        <rosparam command="load" file="$(find turtlebot3_charge)/src/laser_filter.yaml" />
+    </node>
+
+    <node pkg="turtlebot3_charge" type="find_spots.py" name="find_spots"></node>
+
+    <node pkg="turtlebot3_charge" type="transform_spots.py" name="transform_spots"></node>
+
+    <node pkg="turtlebot3_charge" type="find_charging_station.py" name="find_charging_station"></node>
+</launch>
